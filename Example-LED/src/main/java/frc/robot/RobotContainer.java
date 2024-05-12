@@ -11,7 +11,7 @@ import edu.wpi.first.wpilibj2.command.Commands;
 import frc.robot.subsystems.IntakeSubsystem;
 import frc.robot.subsystems.LEDMainSubsystem;
 import frc.robot.subsystems.LEDPattern;
-import frc.robot.subsystems.LEDSusbystem;
+import frc.robot.subsystems.LEDSubsystem;
 import frc.robot.subsystems.LEDTopSubsystem;
 import frc.robot.subsystems.VisionSubsystem;
 
@@ -21,7 +21,7 @@ public class RobotContainer {
   private final IntakeSubsystem intake = new IntakeSubsystem();
   private final VisionSubsystem vision = new VisionSubsystem();
 
-  private final LEDSusbystem led = new LEDSusbystem(64, 1);
+  private final LEDSubsystem led = new LEDSubsystem(64, 1);
   private final LEDTopSubsystem ledTop = new LEDTopSubsystem(led);
   private final LEDMainSubsystem ledMain = new LEDMainSubsystem(led);
 

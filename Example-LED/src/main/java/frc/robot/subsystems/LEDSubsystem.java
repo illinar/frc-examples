@@ -8,11 +8,11 @@ import edu.wpi.first.wpilibj.AddressableLED;
 import edu.wpi.first.wpilibj.AddressableLEDBuffer;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
-public class LEDSusbystem extends SubsystemBase {
+public class LEDSubsystem extends SubsystemBase {
   private final AddressableLED strip;
   private final AddressableLEDBuffer buffer;
    
-  public LEDSusbystem(int length, int port) {
+  public LEDSubsystem(int length, int port) {
     // initialize the physical LED strip length
     strip = new AddressableLED(port);
     strip.setLength(length);
