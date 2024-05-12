@@ -32,8 +32,8 @@ public class RobotContainer {
   private final LEDPattern orange = LEDPattern.solid(Color.kOrange);
   
   public RobotContainer() {
-    led.setDefaultCommand(ledTop.runPattern(defaultPattern).ignoringDisable(true).withName("LedDefault"));
-    led.setDefaultCommand(ledMain.runPattern(defaultPattern).ignoringDisable(true).withName("LedDefault"));
+    ledTop.setDefaultCommand(ledTop.runPattern(defaultPattern).ignoringDisable(true).withName("LedDefault"));
+    ledMain.setDefaultCommand(ledMain.runPattern(defaultPattern).ignoringDisable(true).withName("LedDefault"));
 
     intake.gamePieceAcquired.onTrue(
       ledMain.runPattern(blink).withTimeout(1.0).withName("LedAcquiredGamePiece"));
